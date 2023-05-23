@@ -1,0 +1,27 @@
+@use './mixins' as *;
+footer{
+    background-color: #303030;
+    padding: 2rem;
+    .container{
+        @include container(80%);
+        @include flex(row,space-between,center);
+        
+        .sign-up{
+            border: 1px solid #0282F9;
+            color: white;
+            padding: 1rem;
+        }
+        .follow-us{
+            @include flex(row,space-around,center);
+            h3,
+            img{
+                margin-right: 1rem;
+            }
+    
+            h3{
+                color: #0282F9;
+            }
+    
+        }
+    }
+}

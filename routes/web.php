@@ -15,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $db = config('db');
-    return view('home', compact('db'));
+    $socials = config('ftsocials');
+    return view('home', compact('db' , 'socials'));
 });
